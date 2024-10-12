@@ -2,5 +2,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "MGPSDK"
+    name: "gateway-ios-sdk",
+    platforms: [
+        .iOS(.v11)
+    ],
+    products: [
+        .library(
+            name: "MPGSDK",
+            targets: ["MPGSDK"]
+        ),
+    ],
+    targets: [
+        .target(
+            name: "MPGSDK",
+            dependencies: []
+        ),
+    ]
 )
