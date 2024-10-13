@@ -15,7 +15,8 @@ let package = Package(
     targets: [
         .target(
             name: "MPGSDK",
-            dependencies: []
+            dependencies: [],
+            path: "Sources/MPGSDK/"
         ),
     ]
 )
